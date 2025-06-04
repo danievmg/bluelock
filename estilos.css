@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+
+    background-color: rgb(42, 30, 210);
+   
+
+
+
+    box-sizing: border-box;
+  }
+  /* MEU DEUS DO CEU EU NÂO AGUENTO MAIS EU NÂO SEI OQUE EU FIZ AQUI AAAAAAAAAAAAAA */
+#site {
+    display: grid;
+    place-items: center;
+    grid-area: 'topo topo'
+               'principal principal'
+               'rodape rodape';
+
+  }
+
+  
+#video {
+
+  height:100vh;
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+  grid-template-areas: 'principal';
+
+  }
+  
+
+  
+#topo {
+    position: relative;
+    width: 100vw;
+    height: 15vh;
+    left: 0;
+    top: 0;
+
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.7);
+    /* box-shadow: 24px 0px 50px rgba(0, 0, 0, 0); */
+    grid-template-areas: 'topo'; 
+  }
+  
+.texto,.texto2 {
+    font-family: 'arial';
+    text-align: center;
+    font-size: 16px;
+    color: black;
+  }
+  
+.texto2 {
+    color: #fff;
+  }
+  
+.imagem {
+    height: 20vh; /* Altura relativa */
+    max-width: 100%; /* Largura máxima relativa */
+    justify-self: end; /* Alinhamento à direita */
+}
+  
+.cor {
+    border-radius: 8px;
+    background-color: rgb(25, 0, 255);
+    border-color:  rgb(25, 0, 255);
+    height: 5vh; /* Altura relativa */
+    max-width: 100%; /* Largura máxima relativa */
+  }
+
+#personagens{
+  margin-top: 10px ;
+  height:100vh;
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+  grid-template-areas: 'principal';
+  margin-bottom: 10px;
+  
+}
+
+
+#personagens img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 9px;
+    border: 2px solid white;
+    
+} 
+
+
+#trailers{
+  height: 100vh;
+
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  align-items: center;
+  justify-items: center;
+  grid-template-areas: 'principal';
+  margin-bottom: 10px;
+
+}
+#trailers iframe{
+  
+  height: 300px;
+  width: 400px;
+  /* width: auto; */
+  object-fit: cover;
+  border-radius: 9px;
+  border: 2px solid white;
+  
+}
+#curiosidades{
+  width: 100vw;
+  background-color: rgb(80, 170, 255);
+  width: 100vh;
+  text-align: center;
+  margin: 10px;
+  grid-template-areas: 'principal';
+  padding: 15px;
+}
+
+#curiosidades img{
+  margin: 15px;
+  width: 90%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 9px;
+  border: 2px solid white;
+}
+#rodape{
+  background-color: black;
+  width: 100vw;
+  grid-template-areas: 'principal';
+}
+#contato {
+  background-image: url(images/fundo.jpg);
+  background-size: cover;
+  width: 90vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  grid-template-areas: 'principal';
+  margin: 12px;
+
+}
+.mensagem{
+  margin: 12px;
+  height: 50px;
+}
+.titulo{
+  font-size: 23px;
+}
+input{
+  border-radius: 8px;
+}
+#galeria {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr)); /* Utiliza 4 colunas de tamanho flexível */
+  gap: 20px; /* Espaçamento entre as células */
+  align-items: center;
+  justify-items: center;
+  grid-template-areas: 'principal';
+  margin: 10px 0;
+}
+
+#galeria img {
+  width: 300px; /* A imagem ocupa toda a largura da célula */
+  height: 300px; /* A imagem ocupa toda a altura da célula */
+  object-fit: cover; /* Para ajustar o tamanho da imagem */
+  border-radius: 9px;
+  border: 2px solid white;
+}
+#temporadas {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)); 
+
+  gap: 20px; 
+  margin: 10px 0;
+
+  align-items: center;
+  justify-items: center;
+  grid-template-areas: 'principal';
+}
+#temporadas a{
+  display: grid;
+  justify-items: center;
+  align-content: center;
+
+  width: 300px; 
+  height: 300px; 
+  grid-template-areas: 'principal';
+
+  object-fit: cover; 
+  border-radius: 9px;
+  border: 2px solid white;
+}
+
+#temporadas .imagemT1{
+  background-color: black;
+}
+#temporadas .imagemT2{
+  background-color: black;
+  
+}
+

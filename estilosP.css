@@ -1,0 +1,11 @@
+#site {
+    display: grid;
+    place-items: center;
+    grid-template-areas: 
+    
+    'personagens personagens';
+
+  }
+#site div{
+    padding: 1em;
+}
